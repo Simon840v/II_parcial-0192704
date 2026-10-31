@@ -33,10 +33,9 @@ body {
 
 .navbar .logo {
   font-family: 'Suranna', serif;
-  font-size: 3.75rem;
+  font-size: 2rem;
   color: #025940;
-  width: 338px;
-  height: 61px;
+  font-weight: 400;
 }
 
 .nav-links {
