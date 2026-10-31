@@ -1,1 +1,1 @@
- #este es el autor: https://www.figma.com/design/wMoHZjowABYJt7fQZoB6lG/Travel-Agency-Landing-Page--Community-?node-id=108-84&t=mdw0YXppXNG9SrJZ-0
+ #este es el autor: https://www.figma.com/design/mV6YbRrnD0jueuJF5OwYIA/Lotus---co.--Community-?node-id=0-1&p=f&t=30xHeQujHHnrlJ1d-0
