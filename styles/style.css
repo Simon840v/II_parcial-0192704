@@ -1,0 +1,788 @@
+/* Lotus & Co. — estilos responsive */
+:root {
+  --pink: #FFD1FF;
+  --lavender: #ABA9F5;
+  --green: #82bd68;
+  --plum: #965784;
+  --ink: #080808;
+  --magenta: #a90082;
+  --cream: #f3edbd;
+  --page-width: 1120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 20px 5px;
+  background: #918b8b;
+  color: var(--ink);
+  font-family: 'Suranna', serif;
+}
+
+main {
+  width: min(100%, var(--page-width));
+  margin: 0 auto;
+}
+
+.home {
+  position: relative;
+  min-height: 650px;
+  margin: 0 auto 20px;
+  padding: 2rem 4%;
+  background: var(--pink);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-content: space-between;
+  min-height: 10px;
+  gap: 24px;
+  padding: 0 10.5%;
+}
+
+.brand {
+  color: #025940;
+  font-size: clamp(22px, 2.35vw, 28px);
+  font-weight: 15;
+  text-decoration: none;
+  white-space: nowrap;
+  text-shadow: -5px 4px 22px #E57A7A;
+  margin-top: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 2.8vw, 18px);
+}
+
+nav a {
+  color: var(--magenta);
+  font-size: clamp(5px, 2.8vw, 34px);
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 7px 0 4px;
+}
+
+nav span.active {
+  border-bottom: 3px solid var(--magenta);
+}
+
+.hero {
+  height: clamp(105px, 14vw, 145px);
+  margin: 0 -1.5% 0;
+  display: grid;
+  place-items: center;
+  background: url("../assets/hero-flores.png") center / 100% 100% no-repeat;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(17px, 1.9vw, 22px);
+  font-weight: 600;
+  text-align: center;
+}
+
+.occasion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 5.5%;
+  margin: -35px 3% 8px;
+  position: relative;
+}
+
+.occasion-card {
+  background: var(--cream);
+  padding: 10px 10px 7px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.occasion-card.featured {
+  margin-top: 40px;
+}
+
+.occasion-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  display: block;
+}
+
+.occasion-card p {
+  margin: 9px 0 0;
+  font-size: clamp(12px, 1.2vw, 15px);
+  line-height: 1.05;
+}
+
+.winter-promo {
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: 62% 38%;
+  min-height: 150px;
+  width: 100%;
+  /* margin: 12px -5.3% -24px; */
+  overflow: hidden;
+}
+
+.winter-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.promo-copy {
+  background: var(--green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.promo-title {
+  font-size: clamp(17px, 2.1vw, 23px);
+  line-height: 1.18;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.book-button {
+  background: #ddd;
+  color: #111;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 16px;
+}
+
+.book-button:hover {
+  background: white;
+}
+
+.promo-lotus {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  right: -2px;
+  bottom: 4px;
+}
+
+/* Página de pedido */
+.orders {
+  background: var(--lavender);
+  min-height: 650px;
+  padding: 24px 3.3% 34px;
+}
+
+.orders .site-header,
+.contact .site-header {
+  min-height: 65px;
+  padding-right: 10%;
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, .95fr);
+  gap: 3%;
+  align-items: start;
+  margin-top: 6px;
+}
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: 16px;
+  align-items: center;
+  min-width: 0;
+  padding-top: 22px;
+}
+
+.thumbnail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.thumbnail-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: border-color .18s ease, transform .18s ease;
+}
+
+.thumbnail-button img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #f7f5f3;
+}
+
+.thumbnail-button:hover {
+  transform: scale(1.025);
+}
+
+.thumbnail-button.is-selected {
+  border: 1.5px solid #111;
+}
+
+.thumbnail-button:focus-visible {
+  outline: 2px solid var(--magenta);
+  outline-offset: 3px;
+}
+
+.product-main-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: contain;
+  object-position: center;
+  background: #f7f5f3;
+}
+
+.product-info {
+  padding: 0 2% 0 0;
+}
+
+.product-info h2 {
+  font-size: clamp(23px, 2.6vw, 28px);
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.product-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.product-info .pick-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 12px 0 13px;
+}
+
+.order-form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 14px 10px;
+}
+
+.order-form label:not(.delivery-label) {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: clamp(16px, 1.75vw, 19px);
+  margin: 8px 0;
+}
+
+.order-form input[type="radio"] {
+  accent-color: #eee;
+  width: 19px;
+  height: 19px;
+}
+
+.delivery-label {
+  display: block;
+  font-size: 15px;
+  margin: 14px 0 14px;
+}
+
+.delivery-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.delivery-fields input {
+  min-width: 0;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  background: var(--pink);
+  padding: 10px 8px;
+  text-align: center;
+  font: 13px "Josefin Slab", Georgia, serif;
+}
+
+.add-button {
+  display: block;
+  width: 90%;
+  margin: 28px auto 0;
+  padding: 10px;
+  border: 0;
+  background: var(--plum);
+  color: #080808;
+  font: 600 19px "Josefin Slab", Georgia, serif;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  filter: brightness(1.08);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Contacto y pie */
+.contact {
+  background: var(--green);
+  min-height: 650px;
+  padding: 24px 3.3% 28px;
+}
+
+.contact .site-header {
+  padding-right: 10%;
+}
+
+.contact-banner {
+  min-height: 205px;
+  background: linear-gradient(rgba(175, 218, 146, .72), rgba(175, 218, 146, .72)), url("../assets/contact-flores.png") center / cover no-repeat;
+  display: flex;
+  align-items: flex-start;
+  padding: 22px 3%;
+}
+
+.contact-copy h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+.contact-copy p {
+  font-size: clamp(15px, 1.7vw, 18px);
+  margin: 2px 0;
+}
+
+.footer-panel {
+  background: var(--plum);
+  border-radius: 12px;
+  min-height: 300px;
+  margin-top: 6px;
+  padding: 28px 5%;
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr .8fr;
+  gap: 4%;
+}
+
+.footer-column h3,
+.social-column h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 2px;
+}
+
+.footer-column a {
+  display: block;
+  color: #080808;
+  font-size: 12px;
+  line-height: 1.08;
+  text-decoration: none;
+}
+
+.footer-column .stores-title {
+  margin-top: 22px;
+}
+
+.social-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-column h3 {
+  margin-bottom: 26px;
+}
+
+.social-links {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+@media (min-width: 1200px) {
+  .page {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 12px;
+  }
+
+  .page {
+    min-height: auto;
+    margin-bottom: 18px;
+    padding: 18px 5%;
+  }
+
+  .site-header,
+  .home-header {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 0 12px;
+  }
+
+  .home-header {
+    flex-direction: column;
+  }
+
+  .brand {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  nav {
+    gap: clamp(15px, 5vw, 28px);
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    height: 112px;
+    margin: 0 -2%;
+  }
+
+  .hero h1 {
+    font-size: clamp(16px, 4.5vw, 20px);
+  }
+
+  .occasion-grid {
+    gap: 10px;
+    margin: -12px 0 14px;
+  }
+
+  .occasion-card {
+    padding: 6px;
+  }
+
+  .occasion-card.featured {
+    margin-top: 24px;
+  }
+
+  .occasion-card p {
+    font-size: clamp(10px, 2.7vw, 13px);
+  }
+
+  .winter-promo {
+    grid-template-columns: 1fr;
+    margin-bottom: -18px;
+  }
+
+  .winter-photo {
+    min-height: 125px;
+    max-height: 160px;
+  }
+
+  .promo-copy {
+    min-height: 135px;
+  }
+
+  .promo-lotus {
+    bottom: 8px;
+  }
+
+  .orders .site-header,
+  .contact .site-header {
+    padding-right: 0;
+  }
+
+  .product-layout {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .product-gallery {
+    padding-top: 0;
+    grid-template-columns: 18% 1fr;
+    gap: 12px;
+  }
+
+  .thumbnail-list {
+    gap: 10px;
+  }
+
+  .product-main-image {
+    max-height: 390px;
+  }
+
+  .product-info {
+    padding: 0;
+  }
+
+  .product-info h2 {
+    margin-bottom: 12px;
+  }
+
+  .add-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contact-banner {
+    min-height: 185px;
+    padding: 18px 4%;
+  }
+
+  .contact-copy p {
+    overflow-wrap: anywhere;
+  }
+
+  .footer-panel {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 22px 6%;
+  }
+
+  .social-column {
+    grid-column: 1 / -1;
+    padding: 10px 0;
+  }
+
+  .social-column h3 {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    padding: 7px;
+  }
+
+  .page {
+    padding: 15px 4%;
+  }
+
+  nav {
+    gap: 13px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .occasion-grid {
+    gap: 6px;
+  }
+
+  .occasion-card {
+    padding: 4px;
+  }
+
+  .occasion-card p {
+    font-size: 11px;
+  }
+
+  .delivery-fields {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .footer-panel {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 18px 5%;
+  }
+
+  .footer-column a {
+    font-size: 12px;
+  }
+}
+
+/* Ajustes finales: proporciones más cercanas a las capturas y galería nítida */
+.home {
+  padding-bottom: 24px;
+}
+
+.winter-promo {
+  width: auto;
+}
+
+.winter-photo {
+  object-fit: cover;
+  object-position: center;
+}
+
+.thumbnail-button img,
+.product-main-image {
+  object-fit: contain;
+}
+
+.thumbnail-button.is-selected {
+  border: 1px solid #111;
+}
+
+@media (max-width: 700px) {
+  .winter-promo {
+    width: auto;
+  }
+
+  .product-main-image {
+    max-height: 420px;
+  }
+}
+
+
+/* Versión estática: navegación y elementos de compra son solo diseño */
+nav span {
+  color: var(--magenta);
+  font-size: clamp(14px, 1.35vw, 17px);
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 7px 0 4px;
+}
+
+nav span.active {
+  border-bottom: 3px solid var(--magenta);
+}
+
+.brand,
+.book-button {
+  display: inline-block;
+}
+
+.footer-column span {
+  display: block;
+  color: #080808;
+  font-size: 12px;
+  line-height: 1.08;
+}
+
+.thumbnail-button {
+  border: 0 !important;
+  outline: 0;
+  cursor: default;
+  transform: none !important;
+  background: transparent;
+}
+
+.thumbnail-button.is-selected {
+  border: 0 !important;
+}
+
+.thumbnail-button img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border: 0;
+}
+
+.product-main-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  max-height: 460px;
+  object-fit: cover;
+  object-position: center;
+  border: 0;
+}
+
+.occasion-card img {
+  object-fit: cover;
+  object-position: center;
+  border: 0;
+}
+
+.size-options {
+  margin: 0 0 14px 10px;
+}
+
+.size-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: clamp(16px, 1.75vw, 19px);
+  margin: 8px 0;
+}
+
+.radio-look {
+  display: inline-block;
+  flex: 0 0 19px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #eee;
+}
+
+.radio-look.selected {
+  box-shadow: inset 0 0 0 5px #eee;
+}
+
+.fake-input {
+  min-width: 0;
+  width: 100%;
+  background: var(--pink);
+  padding: 10px 8px;
+  color: #8b7a8b;
+  text-align: center;
+  font: 13px "Josefin Slab", Georgia, serif;
+}
+
+.add-button {
+  display: block;
+  text-align: center;
+  cursor: default;
+}
+
+@media (max-width: 700px) {
+  nav span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  nav span {
+    font-size: 13px;
+  }
+}

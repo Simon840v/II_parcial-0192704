@@ -1,184 +1,171 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lotus & Co. - Flower Shop</title>
-  
-  <!-- Enlace al archivo de estilos externo -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Lotus &amp; Co. — arreglos florales para cada ocasión." name="description" />
+    <title>Lotus &amp; Co. | Flores para cualquier ocasión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Suranna&display=swap" rel="stylesheet">
 
-  <!-- Fuentes de Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-  <!-- MARCO 1: HOME -->
-  <div class="figma-frame">
-    <header class="navbar">
-      <div class="logo">Lotus & Co.</div>
-      <nav class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#orders">Orders</a>
-        <a href="#contact">Contact Us!</a>
-      </nav>
-    </header>
-
-    <div class="home-page" id="home">
-      <div class="hero-banner">
-        <h2>FLOWERS FOR ANY OCCASION</h2>
-      </div>
-
-      <div class="cards-grid">
-        <div class="card-item">
-          <img src="assets/image 8.png" alt="Same Day Delivery">
-          <h3>Same Day Flower<br>Delivery</h3>
-        </div>
-        <div class="card-item">
-          <img src="assets/image 7.png" alt="Get Well Flowers">
-          <h3>Get Well Flowers</h3>
-        </div>
-        <div class="card-item">
-          <img src="assets/image 6.png" alt="All Occasion Flowers">
-          <h3>All Occasion Flowers</h3>
-        </div>
-      </div>
-
-      <div class="promo-banner">
-        <div class="promo-img">
-          <img src="assets/image 4.png" alt="Promo Roses">
-        </div>
-        <div class="promo-text">
-          <h2>SAVE UPTO 40%<br>THIS WINTER</h2>
-          <button class="btn-book">BOOK NOW</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MARCO 2: ORDERS -->
-  <div class="figma-frame">
-    <header class="navbar">
-      <div class="logo">Lotus & Co.</div>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#orders" class="active">Orders</a>
-        <a href="#contact">Contact Us!</a>
-      </nav>
-    </header>
-
-    <div class="orders-page" id="orders">
-      <h2 class="product-title">Daydream Bouquet</h2>
-
-      <div class="product-layout">
-        <div class="thumbs-column">
-          <img src="assets/image 8.png" alt="Thumb 1">
-          <img src="assets/image 7.png" alt="Thumb 2">
-          <img src="assets/image 6.png" alt="Thumb 3">
-        </div>
-
-        <div class="main-image">
-          <img src="assets/image 5.png" alt="Daydream Bouquet Main">
-        </div>
-
-        <div class="details-column">
-          <h3>About Daydream Bouquet</h3>
-          <p>Just like a daydream. Our delightful lavender bouquet is gathered with accents of pink and lush greenery in an embossed lavender vase that complements the delicate beauty of the blooms.</p>
-
-          <div class="option-group">
-            <h3>Pick Your Item</h3>
-            <div class="radio-label"><span class="radio-circle"></span> Large $74.99</div>
-            <div class="radio-label"><span class="radio-circle"></span> Medium $64.99</div>
-            <div class="radio-label"><span class="radio-circle"></span> Small $54.99</div>
-          </div>
-
-          <div class="option-group">
-            <h3>Enter Delivery Destination</h3>
-            <div class="input-row">
-              <input type="text" placeholder="Delivery zip code">
-              <input type="text" placeholder="Location type">
+    <main>
+        <!-- INICIO / HOMEPAGE -->
+        <section class="home" id="home">
+            <header class="home-header">
+                <span class="brand" href="#home">Lotus &amp; Co.</span>
+                <nav aria-label="Navegación principal">
+                    <span class="active" href="#home">Home</span>
+                    <span href="#orders">Orders</span>
+                    <span href="#contact">Contact Us!</span>
+                </nav>
+            </header>
+            <div class="hero">
+                <h1>FLOWERS FOR ANY OCCASION</h1>
             </div>
-          </div>
-
-          <button class="btn-add-bag">Add To Bag</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MARCO 3: CONTACT US -->
-  <div class="figma-frame">
-    <header class="navbar">
-      <div class="logo">Lotus & Co.</div>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#orders">Orders</a>
-        <a href="#contact" class="active">Contact Us!</a>
-      </nav>
-    </header>
-
-    <div class="contact-page" id="contact">
-      <div class="contact-hero">
-        <h2>For More Information:</h2>
-        <p><strong>Call:</strong> 856-526-0044</p>
-        <p><strong>mail:</strong> Lotus.co@gmail.com</p>
-        <p><strong>Visit us:</strong> 213 Laurel Ave, Woodstown, NewJersey - 08028</p>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="footer-col">
-        <h4>MORE WAYS TO SHOP</h4>
-        <ul>
-          <li>Flower Delivery Same-Day</li>
-          <li>Birthday Flowers & Gifts</li>
-          <li>Sympathy Flowers & Gifts</li>
-          <li>Flowers Arrangements</li>
-          <li>Roses</li>
-          <li>Plants</li>
-          <li>Gift Baskets & Food</li>
-          <li>Chocolate Covered Strawberries</li>
-          <li>Valentine's Day</li>
-          <li>International Flower Delivery</li>
-          <li>Celebrations Passport</li>
-          <li>Corporate Gifts</li>
-          <li>Marketplace Sellers</li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>CUSTOMER SERVICE</h4>
-        <ul>
-          <li>Customer Service</li>
-          <li>eGift Cards</li>
-          <li>Contact Us</li>
-          <li>Allergy Warning</li>
-          <li>Funeral/Sympathy Advisors</li>
-        </ul>
-
-        <h4 style="margin-top: 15px;">OUR STORES</h4>
-        <ul>
-          <li>Store Locator</li>
-          <li>Franchise Opportunities</li>
-        </ul>
-
-        <h4 style="margin-top: 15px;">ACCOUNT LOGIN</h4>
-        <ul>
-          <li>Sign In to Your Account</li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>FOLLOW US</h4>
-        <div class="social-btns">
-          <div class="social-circle">f</div>
-          <div class="social-circle">ig</div>
-        </div>
-      </div>
-    </footer>
-  </div>
+            <div class="occasion-grid">
+                <article class="occasion-card">
+                    <img alt="Ramo de flores para entrega el mismo día" src="assets/same-day-bouquet.png" />
+                    <p>Same Day Flower<br />Delivery</p>
+                </article>
+                <article class="occasion-card featured">
+                    <img alt="Ramo de flores para desear pronta recuperación" src="assets/get-well-bouquet.png" />
+                    <p>Get Well Flowers</p>
+                </article>
+                <article class="occasion-card">
+                    <img alt="Ramo de rosas rosadas para toda ocasión" src="assets/all-occasion-bouquet.png" />
+                    <p>All Occasion Flowers</p>
+                </article>
+            </div>
+            <div class="winter-promo">
+                <img alt="Rosas y flores blancas" class="winter-photo" src="assets/winter-banner.png" />
+                <div class="promo-copy">
+                    <p class="promo-title">SAVE UPTO 40%<br />THIS WINTER</p>
+                    <span class="book-button" href="#orders">BOOK NOW</span>
+                </div>
+                <img alt="" aria-hidden="true" class="promo-lotus" src="assets/lotus-icon.png" />
+            </div>
+        </section>
+        <!-- PEDIDOS / DETALLE DEL PRODUCTO -->
+        <section class="page orders" id="orders">
+            <header class="site-header">
+                <span aria-hidden="true" class="header-spacer"></span>
+                <nav aria-label="Navegación principal">
+                    <span href="#home">Home</span>
+                    <span class="active" href="#orders">Orders</span>
+                    <span href="#contact">Contact Us!</span>
+                </nav>
+            </header>
+            <div class="product-layout">
+                <div class="product-gallery">
+                    <div aria-label="Escoge una vista del arreglo" class="thumbnail-list">
+                        <div class="thumbnail-button is-selected">
+                            <img alt="" src="assets/daydream-bouquet.png" />
+                        </div>
+                        <div class="thumbnail-button">
+                            <img alt="" src="assets/daydream-detail.png" />
+                        </div>
+                        <div class="thumbnail-button">
+                            <img alt="" src="assets/daydream-stems.png" />
+                        </div>
+                    </div>
+                    <img alt="Daydream Bouquet en un jarrón" class="product-main-image"
+                        src="assets/daydream-bouquet.png" />
+                </div>
+                <div class="product-info">
+                    <h2>Daydream Bouquet</h2>
+                    <h3>About Daydream Bouquet</h3>
+                    <p class="description">Just like a daydream. Our delightful lavender bouquet is gathered with
+                        accents of pink and lush greenery in an embossed lavender vase that complements the delicate
+                        beauty of the blooms.</p>
+                    <h3 class="pick-title">Pick Your Item</h3>
+                    <div class="order-form">
+                        <div class="size-options">
+                            <div class="size-option"><span class="radio-look selected"></span><span
+                                    class="size-name">Large</span>$74.99</div>
+                            <div class="size-option"><span class="radio-look"></span><span
+                                    class="size-name">Medium</span>$64.99</div>
+                            <div class="size-option"><span class="radio-look"></span><span
+                                    class="size-name">Small</span>$54.99</div>
+                        </div>
+                        <div class="delivery-label">Enter Delivery Destination</div>
+                        <div class="delivery-fields">
+                            <div class="fake-input">Delivery zip code</div>
+                            <div class="fake-input">Location type</div>
+                        </div>
+                        <div class="add-button">Add To Bag</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACTO -->
+        <section class="page contact" id="contact">
+            <header class="site-header">
+                <span aria-hidden="true" class="header-spacer"></span>
+                <nav aria-label="Navegación principal">
+                    <span href="#home">Home</span>
+                    <span href="#orders">Orders</span>
+                    <span class="active" href="#contact">Contact Us!</span>
+                </nav>
+            </header>
+            <div class="contact-banner">
+                <div class="contact-copy">
+                    <h2>For More Information:</h2>
+                    <p>Call: 856-526-0044</p>
+                    <p>mail: Lotus.co@gmail.com</p>
+                    <p>Visit us: 213 Laurel Ave, Woodstown, NewJersey - 08028</p>
+                </div>
+            </div>
+            <footer class="footer-panel">
+                <div class="footer-column">
+                    <h3>MORE WAYS TO SHOP</h3>
+                    <span href="#orders">Flower Delivery Same-Day</span>
+                    <span href="#orders">Birthday Flowers &amp; Gifts</span>
+                    <span href="#orders">Sympathy Flowers &amp; Gifts</span>
+                    <span href="#orders">Flowers Arrangements</span>
+                    <span href="#orders">Roses</span>
+                    <span href="#orders">Plants</span>
+                    <span href="#orders">Gift Baskets &amp; Food</span>
+                    <span href="#orders">Chocolate Covered Strawberries</span>
+                    <span href="#orders">Valentine's Day</span>
+                    <span href="#orders">International Flower Delivery</span>
+                    <span href="#orders">Celebrations Passport</span>
+                    <span href="#orders">Corporate Gifts</span>
+                    <span href="#orders">Marketplace Sellers</span>
+                </div>
+                <div class="footer-column service-column">
+                    <h3>CUSTOMER SERVICE</h3>
+                    <span href="#contact">Customer Service</span>
+                    <span href="#contact">eGift Cards</span>
+                    <span href="#contact">Contact Us</span>
+                    <span href="#contact">Allergy Warning</span>
+                    <span href="#contact">Funeral/Sympathy Advisors</span>
+                    <h3 class="stores-title">OUR STORES</h3>
+                    <span href="#contact">Store Locator</span>
+                    <span href="#contact">Franchise Opportunities</span>
+                    <span href="#contact">ACCOUNT LOGIN</span>
+                    <span href="#contact">Sign In to Your Account</span>
+                </div>
+                <div class="social-column">
+                    <h3>FOLLOW US</h3>
+                    <div class="social-links">
+                        <span aria-label="Facebook" href="#contact"><img alt="" src="assets/facebook.png" /></span>
+                        <span aria-label="Instagram" href="#contact"><img alt="" src="assets/instagram.png" /></span>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
 
 </body>
+
 </html>
